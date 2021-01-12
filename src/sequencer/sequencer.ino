@@ -57,7 +57,7 @@ void setup()
   lcd.backlight();
   lcd.clear();
   lcd.setCursor(1, 0);
-  lcd.print("bronaSynth v0.3");
+  lcd.print("bronaSynth v0.1");
   pinMode(bit1, OUTPUT);
   pinMode(bit2, OUTPUT);
   pinMode(bit3, OUTPUT);
@@ -74,15 +74,15 @@ void setup()
   vid = pid = 0;
   Serial.begin(115200);
 
-  if (Usb.Init() == -1)
-  {
-    lcd.clear();
-    lcd.setCursor(1, 0);
-    lcd.print("USB ERROR !");
-
-    while (1)
-      ; //halt
-  }     //if (Usb.Init() == -1...
+//  if (Usb.Init() == -1)
+//  {
+//    lcd.clear();
+//    lcd.setCursor(1, 0);
+//    lcd.print("USB ERROR !");
+//
+//    while (1)
+//      ; //halt
+//       }     //if (Usb.Init() == -1...
 
   delay(500);
 
